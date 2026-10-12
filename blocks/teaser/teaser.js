@@ -10,6 +10,6 @@ export default function decorate(block) {
   logo.classList.add(...[...block.classList].filter(
     (className) => LOGO_SETTINGS.some((name) => className.startsWith(`${name}-`)),
   ));
-  decorateLogo(logo);
+  decorateLogo(logo, { size: 'sm' });
   block.append(logo);
 }
