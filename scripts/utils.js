@@ -2,7 +2,10 @@ import { toClassName } from './aem.js';
 
 /**
  * Reads a block's properties: props passed in win, then the authored content, then the defaults.
- * Fields are read one row per field, in model order. When the fields share a prefix they're
+ * Fields authored as classes (classes_ fields, like xe-logo's) have option values prefixed with
+ * the field name, so the block gets a class "{name}-{value}" (e.g. "size-lg"); the field is read
+ * from that class, compared as a class name (lowercased, "trailingIcon" becomes "trailingicon").
+ * Other fields are read one row per field, in model order. When the fields share a prefix they're
  * grouped into a single cell with one <p> per field, so a single row (or cell) holding several
  * fields is read one <p> per field instead.
  * Settings passed as props are set by code, so they have no authored field and are skipped
@@ -13,15 +16,22 @@ import { toClassName } from './aem.js';
  * @returns {Object} property value by field name
  */
 export function getBlockProps(block, defaults, props = {}) {
-  const authored = Object.keys(defaults).filter((name) => !Object.hasOwn(props, name));
+  const classes = [...block.classList];
+  const values = {};
+  const authored = [];
+  Object.keys(defaults).filter((name) => !Object.hasOwn(props, name)).forEach((name) => {
+    const prefix = `${toClassName(name)}-`;
+    const option = classes.find((className) => className.startsWith(prefix));
+    if (option) values[name] = option.slice(prefix.length);
+    else authored.push(name);
+  });
   const children = [...block.children];
   const grouped = authored.length > 1 && children.length === 1;
   const paragraphs = grouped ? [...children[0].querySelectorAll('p')] : [];
   const cells = paragraphs.length ? paragraphs : children;
-  const values = Object.fromEntries(authored.map((name, i) => [
-    name,
-    cells[i]?.textContent.trim() || defaults[name],
-  ]));
+  authored.forEach((name, i) => {
+    values[name] = cells[i]?.textContent.trim() || defaults[name];
+  });
   return { ...defaults, ...values, ...props };
 }
 

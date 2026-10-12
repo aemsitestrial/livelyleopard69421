@@ -187,9 +187,9 @@
                 "template": {
                   "name": "XE Logo",
                   "model": "xe-logo",
-                  "logo_variant": "primary",
-                  "logo_size": "md",
-                  "logo_type": "lockup"
+                  "classes_variant": "variant-primary",
+                  "classes_size": "size-md",
+                  "classes_type": "type-lockup"
                 }
               }
             }
