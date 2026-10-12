@@ -1,5 +1,6 @@
 {
-    "definitions": [{
+  "definitions": [
+    {
       "title": "Teaser",
       "id": "teaser",
       "plugins": {
@@ -12,115 +13,126 @@
               "textContent_text": "<h2>Enter a title</h2><p>...and body text here!</p>",
               "textContent_cta": "/",
               "textContent_ctaText": "Click me!",
-              "logo_variant": "primary",
-              "logo_type": "lockup"
+              "classes_logoVariant": "variant-primary",
+              "classes_logoSize": "size-md",
+              "classes_logoKind": "type-lockup"
             }
           }
         }
       }
-    }],
-    "models": [
+    }
+  ],
+  "models": [
+    {
+      "id": "teaser",
+      "fields": [
         {
-            "id": "teaser",
-            "fields": [
-                {
-                    "component": "select",
-                    "name": "classes",
-                    "value": "",
-                    "label": "Teaser options",
-                    "valueType": "string",
-                    "options": [
-                        {
-                            "name": "Default",
-                            "value": ""
-                        },
-                        {
-                            "name": "Fullwidth",
-                            "value": "teaser-fullwidth"
-                        }
-                    ]
-                },
-                {
-                    "component": "reference",
-                    "valueType": "string",
-                    "name": "image",
-                    "label": "Image",
-                    "multi": false
-                },
-                {
-                    "component": "text",
-                    "valueType": "string",
-                    "name": "imageAlt",
-                    "label": "Image alt text",
-                    "required": true
-                },
-                {
-                    "component": "richtext",
-                    "name": "textContent_text",
-                    "label": "Text",
-                    "valueType": "string",
-                    "required": true
-                },
-                {
-                    "component": "aem-content",
-                    "name": "textContent_cta",
-                    "label": "CTA",
-                    "valueType": "string"
-                },
-                {
-                    "component": "text",
-                    "name": "textContent_ctaText",
-                    "label": "CTA label",
-                    "valueType": "string"
-                },
-                {
-                    "component": "select",
-                    "name": "logo_variant",
-                    "value": "primary",
-                    "label": "Logo variant",
-                    "valueType": "string",
-                    "options": [
-                        {
-                            "name": "Primary",
-                            "value": "primary"
-                        },
-                        {
-                            "name": "Inverse",
-                            "value": "inverse"
-                        }
-                    ]
-                },
-                {
-                    "component": "select",
-                    "name": "logo_size",
-                    "value": "md",
-                    "label": "Logo size",
-                    "valueType": "string",
-                    "options": [
-                        { "name": "Small", "value": "sm" },
-                        { "name": "Medium", "value": "md" },
-                        { "name": "Large", "value": "lg" }
-                    ]
-                },
-                {
-                    "component": "select",
-                    "name": "logo_type",
-                    "value": "lockup",
-                    "label": "Logo type",
-                    "valueType": "string",
-                    "options": [
-                        {
-                            "name": "Lockup",
-                            "value": "lockup"
-                        },
-                        {
-                            "name": "Mark",
-                            "value": "mark"
-                        }
-                    ]
-                }
-            ]
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Teaser options",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "Fullwidth",
+              "value": "teaser-fullwidth"
+            }
+          ]
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image alt text",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "textContent_text",
+          "label": "Text",
+          "valueType": "string",
+          "required": true
+        },
+        {
+          "component": "aem-content",
+          "name": "textContent_cta",
+          "label": "CTA",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "textContent_ctaText",
+          "label": "CTA label",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes_logoVariant",
+          "value": "variant-primary",
+          "label": "Logo variant",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Primary",
+              "value": "variant-primary"
+            },
+            {
+              "name": "Inverse",
+              "value": "variant-inverse"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_logoSize",
+          "value": "size-md",
+          "label": "Logo size",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Small",
+              "value": "size-sm"
+            },
+            {
+              "name": "Medium",
+              "value": "size-md"
+            },
+            {
+              "name": "Large",
+              "value": "size-lg"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_logoKind",
+          "value": "type-lockup",
+          "label": "Logo type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Lockup",
+              "value": "type-lockup"
+            },
+            {
+              "name": "Mark",
+              "value": "type-mark"
+            }
+          ]
         }
-    ],
-    "filters": []
+      ]
+    }
+  ],
+  "filters": []
 }

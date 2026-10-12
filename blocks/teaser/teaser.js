@@ -1,18 +1,15 @@
 import decorateLogo from '../xe-logo/xe-logo.js';
 
+// The logo's settings, authored on this block as "{setting}-{value}" classes.
+const LOGO_SETTINGS = ['variant', 'size', 'type'];
+
 export default function decorate(block) {
-  // Get the logo row (3rd row)
-  const logoRow = block.children[2];
-
-  // when all logoRow is authorable
-  decorateLogo(logoRow);
-
-  // when not all logoRow is authorable
-  // decorateLogo(logoRow, { type: 'lockup' });
-
-  // when logoRow is not authorable
-  // const logo = document.createElement('div');
-  // logo.className = 'teaser-logo';
-  // decorateLogo(logo, { variant: 'primary', size: 'md', type: 'lockup' });
-  // block.append(logo);
+  // The logo's classes_ fields don't render a row, so it gets a container of its own.
+  const logo = document.createElement('div');
+  logo.className = 'teaser-logo';
+  logo.classList.add(...[...block.classList].filter(
+    (className) => LOGO_SETTINGS.some((name) => className.startsWith(`${name}-`)),
+  ));
+  decorateLogo(logo);
+  block.append(logo);
 }

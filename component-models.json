@@ -270,56 +270,56 @@
       },
       {
         "component": "select",
-        "name": "logo_variant",
-        "value": "primary",
+        "name": "classes_logoVariant",
+        "value": "variant-primary",
         "label": "Logo variant",
         "valueType": "string",
         "options": [
           {
             "name": "Primary",
-            "value": "primary"
+            "value": "variant-primary"
           },
           {
             "name": "Inverse",
-            "value": "inverse"
+            "value": "variant-inverse"
           }
         ]
       },
       {
         "component": "select",
-        "name": "logo_size",
-        "value": "md",
+        "name": "classes_logoSize",
+        "value": "size-md",
         "label": "Logo size",
         "valueType": "string",
         "options": [
           {
             "name": "Small",
-            "value": "sm"
+            "value": "size-sm"
           },
           {
             "name": "Medium",
-            "value": "md"
+            "value": "size-md"
           },
           {
             "name": "Large",
-            "value": "lg"
+            "value": "size-lg"
           }
         ]
       },
       {
         "component": "select",
-        "name": "logo_type",
-        "value": "lockup",
+        "name": "classes_logoKind",
+        "value": "type-lockup",
         "label": "Logo type",
         "valueType": "string",
         "options": [
           {
             "name": "Lockup",
-            "value": "lockup"
+            "value": "type-lockup"
           },
           {
             "name": "Mark",
-            "value": "mark"
+            "value": "type-mark"
           }
         ]
       }
