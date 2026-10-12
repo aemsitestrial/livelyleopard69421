@@ -51,7 +51,9 @@
         "cards",
         "columns",
         "fragment",
-        "xe-hyperlink"
+        "xe-hyperlink",
+        "xe-logo",
+        "teaser"
       ]
     }
   ]

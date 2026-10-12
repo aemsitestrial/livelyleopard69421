@@ -216,6 +216,116 @@
     ]
   },
   {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Fullwidth",
+            "value": "teaser-fullwidth"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "textContent_text",
+        "label": "Text",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes_logoVariant",
+        "value": "variant-primary",
+        "label": "Logo variant",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "variant-primary"
+          },
+          {
+            "name": "Inverse",
+            "value": "variant-inverse"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_logoSize",
+        "value": "size-md",
+        "label": "Logo size",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Small",
+            "value": "size-sm"
+          },
+          {
+            "name": "Medium",
+            "value": "size-md"
+          },
+          {
+            "name": "Large",
+            "value": "size-lg"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_logoKind",
+        "value": "type-lockup",
+        "label": "Logo type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Lockup",
+            "value": "type-lockup"
+          },
+          {
+            "name": "Mark",
+            "value": "type-mark"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "xe-hyperlink",
     "fields": [
       {
@@ -280,6 +390,66 @@
           {
             "name": "Same Tab (_self)",
             "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xe-logo",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes_variant",
+        "value": "variant-primary",
+        "label": "Variant",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "variant-primary"
+          },
+          {
+            "name": "Inverse",
+            "value": "variant-inverse"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_size",
+        "value": "size-md",
+        "label": "Size",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Small",
+            "value": "size-sm"
+          },
+          {
+            "name": "Medium",
+            "value": "size-md"
+          },
+          {
+            "name": "Large",
+            "value": "size-lg"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_type",
+        "value": "type-lockup",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Lockup",
+            "value": "type-lockup"
+          },
+          {
+            "name": "Mark",
+            "value": "type-mark"
           }
         ]
       }
