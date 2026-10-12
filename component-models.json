@@ -214,5 +214,75 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "xe-hyperlink",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link_cta",
+        "label": "URL",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "link_ctaText",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "name": "classes_trailingIcon",
+        "label": "Trailing Icon",
+        "valueType": "boolean",
+        "value": false
+      },
+      {
+        "component": "select",
+        "name": "classes_type",
+        "label": "Type",
+        "valueType": "string",
+        "value": "auto",
+        "options": [
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "External",
+            "value": "external"
+          },
+          {
+            "name": "Internal",
+            "value": "internal"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_target",
+        "label": "Target",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "New Tab (_blank)",
+            "value": "_blank"
+          },
+          {
+            "name": "Same Tab (_self)",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
   }
 ]
