@@ -261,6 +261,12 @@
         "name": "textContent_cta",
         "label": "CTA",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
       }
     ]
   },
