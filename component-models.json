@@ -261,67 +261,6 @@
         "name": "textContent_cta",
         "label": "CTA",
         "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "textContent_ctaText",
-        "label": "CTA label",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_logoVariant",
-        "value": "variant-primary",
-        "label": "Logo variant",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Primary",
-            "value": "variant-primary"
-          },
-          {
-            "name": "Inverse",
-            "value": "variant-inverse"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes_logoSize",
-        "value": "size-md",
-        "label": "Logo size",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Small",
-            "value": "size-sm"
-          },
-          {
-            "name": "Medium",
-            "value": "size-md"
-          },
-          {
-            "name": "Large",
-            "value": "size-lg"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes_logoKind",
-        "value": "type-lockup",
-        "label": "Logo type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Lockup",
-            "value": "type-lockup"
-          },
-          {
-            "name": "Mark",
-            "value": "type-mark"
-          }
-        ]
       }
     ]
   },
