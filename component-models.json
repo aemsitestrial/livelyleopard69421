@@ -353,23 +353,6 @@
     "fields": [
       {
         "component": "select",
-        "name": "classes_variant",
-        "value": "variant-primary",
-        "label": "Variant",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Primary",
-            "value": "variant-primary"
-          },
-          {
-            "name": "Inverse",
-            "value": "variant-inverse"
-          }
-        ]
-      },
-      {
-        "component": "select",
         "name": "classes_size",
         "value": "size-md",
         "label": "Size",
@@ -386,6 +369,23 @@
           {
             "name": "Large",
             "value": "size-lg"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_variant",
+        "value": "variant-primary",
+        "label": "Variant",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "variant-primary"
+          },
+          {
+            "name": "Inverse",
+            "value": "variant-inverse"
           }
         ]
       },
