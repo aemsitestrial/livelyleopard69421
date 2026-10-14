@@ -77,7 +77,7 @@
           "value": "",
           "options": [
             {
-              "name": "Default",
+              "name": "Auto",
               "value": ""
             },
             {
@@ -87,6 +87,14 @@
             {
               "name": "Same Tab (_self)",
               "value": "_self"
+            },
+            {
+              "name": "Parent (_parent)",
+              "value": "_parent"
+            },
+            {
+              "name": "Top (_top)",
+              "value": "_top"
             }
           ]
         }
