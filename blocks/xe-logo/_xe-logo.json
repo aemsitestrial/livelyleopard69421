@@ -10,8 +10,8 @@
             "template": {
               "name": "XE Logo",
               "model": "xe-logo",
-              "classes_variant": "variant-primary",
               "classes_size": "size-md",
+              "classes_variant": "variant-primary",
               "classes_type": "type-lockup"
             }
           }
@@ -23,23 +23,6 @@
     {
       "id": "xe-logo",
       "fields": [
-        {
-          "component": "select",
-          "name": "classes_variant",
-          "value": "variant-primary",
-          "label": "Variant",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Primary",
-              "value": "variant-primary"
-            },
-            {
-              "name": "Inverse",
-              "value": "variant-inverse"
-            }
-          ]
-        },
         {
           "component": "select",
           "name": "classes_size",
@@ -58,6 +41,23 @@
             {
               "name": "Large",
               "value": "size-lg"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_variant",
+          "value": "variant-primary",
+          "label": "Variant",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Primary",
+              "value": "variant-primary"
+            },
+            {
+              "name": "Inverse",
+              "value": "variant-inverse"
             }
           ]
         },
