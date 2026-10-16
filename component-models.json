@@ -604,15 +604,17 @@
     "id": "xe-hyperlink",
     "fields": [
       {
+        "component": "text",
+        "name": "link_ctaText",
+        "label": "Label",
+        "valueType": "string",
+        "value": "Hyperlink",
+        "required": true
+      },
+      {
         "component": "aem-content",
         "name": "link_cta",
         "label": "URL",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "link_ctaText",
-        "label": "Text",
         "valueType": "string"
       },
       {
@@ -644,35 +646,6 @@
           {
             "name": "Download",
             "value": "download"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes_target",
-        "label": "Target",
-        "valueType": "string",
-        "value": "",
-        "options": [
-          {
-            "name": "Auto",
-            "value": ""
-          },
-          {
-            "name": "New Tab (_blank)",
-            "value": "_blank"
-          },
-          {
-            "name": "Same Tab (_self)",
-            "value": "_self"
-          },
-          {
-            "name": "Parent (_parent)",
-            "value": "_parent"
-          },
-          {
-            "name": "Top (_top)",
-            "value": "_top"
           }
         ]
       }

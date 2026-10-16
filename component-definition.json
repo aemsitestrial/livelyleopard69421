@@ -231,11 +231,10 @@
                 "template": {
                   "name": "XE Hyperlink",
                   "model": "xe-hyperlink",
-                  "link_cta": "#",
                   "link_ctaText": "Hyperlink",
+                  "link_cta": "#",
                   "classes_trailingIcon": false,
-                  "classes_type": "auto",
-                  "classes_target": ""
+                  "classes_type": "auto"
                 }
               }
             }
