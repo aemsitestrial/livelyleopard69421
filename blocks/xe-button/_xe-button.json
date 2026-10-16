@@ -11,16 +11,15 @@
               "name": "XE Button",
               "model": "xe-button",
               "link_ctaText": "Button",
+              "link_cta": "#",
               "classes_enabled": true,
               "classes_color": "primary",
               "classes_treatment": "filled",
               "classes_size": "md",
-              "classes_mobileSizeOverride": "md",
+              "classes_mobileSizeOverride": "",
               "classes_leadingIcon": "",
-              "classes_trailingIcon": false,
-              "link_cta": "#",
-              "classes_type": "auto",
-              "classes_target": ""
+              "classes_trailingIcon": "",
+              "classes_type": "auto"
             }
           }
         }
@@ -38,6 +37,12 @@
           "required": true,
           "valueType": "string",
           "value": "Button"
+        },
+        {
+          "component": "aem-content",
+          "name": "link_cta",
+          "label": "URL",
+          "valueType": "string"
         },
         {
           "component": "boolean",
@@ -79,11 +84,11 @@
           "valueType": "string",
           "value": "md",
           "options": [
-            { "name": "xxs", "value": "xxs" },
-            { "name": "xs", "value": "xs" },
-            { "name": "sm", "value": "sm" },
-            { "name": "md", "value": "md" },
-            { "name": "lg", "value": "lg" }
+            { "name": "Extra Extra Small", "value": "xxs" },
+            { "name": "Extra Small", "value": "xs" },
+            { "name": "Small", "value": "sm" },
+            { "name": "Medium", "value": "md" },
+            { "name": "Large", "value": "lg" }
           ]
         },
         {
@@ -91,13 +96,14 @@
           "name": "classes_mobileSizeOverride",
           "label": "Mobile Size Override",
           "valueType": "string",
-          "value": "md",
+          "value": "",
           "options": [
-            { "name": "xxs", "value": "xxs" },
-            { "name": "xs", "value": "xs" },
-            { "name": "sm", "value": "sm" },
-            { "name": "md", "value": "md" },
-            { "name": "lg", "value": "lg" }
+            {"name": "Choose an Option", "value": "" },
+            { "name": "Extra Extra Small", "value": "xxs" },
+            { "name": "Extra Small", "value": "xs" },
+            { "name": "Small", "value": "sm" },
+            { "name": "Medium", "value": "md" },
+            { "name": "Large", "value": "lg" }
           ]
         },
         {
@@ -107,32 +113,33 @@
           "valueType": "string",
           "value": "",
           "options": [
-            {"name": "Choose an icon", "value": "" },
-            { "name": "faArrowRight", "value": "faArrowRight" },
-            { "name": "faArrowLeft", "value": "faArrowLeft" },
-            { "name": "faChevronRight", "value": "faChevronRight" },
-            { "name": "faChevronLeft", "value": "faChevronLeft" },
-            { "name": "faPlus", "value": "faPlus" },
-            { "name": "faDownload", "value": "faDownload" },
-            { "name": "faHeart", "value": "faHeart" },
-            { "name": "faUser", "value": "faUser" },
-            { "name": "faLightbulb", "value": "faLightbulb" },
-            { "name": "faStar", "value": "faStar" },
-            { "name": "faBolt", "value": "faBolt" }
+            {"name": "Choose an Option", "value": "" },
+            { "name": "Arrow Right", "value": "faArrowRight" },
+            { "name": "Arrow Left", "value": "faArrowLeft" },
+            { "name": "Chevron Right", "value": "faChevronRight" },
+            { "name": "Chevron Left", "value": "faChevronLeft" },
+            { "name": "Plus", "value": "faPlus" },
+            { "name": "Download", "value": "faDownload" },
+            { "name": "Heart", "value": "faHeart" },
+            { "name": "User", "value": "faUser" },
+            { "name": "Lightbulb", "value": "faLightbulb" },
+            { "name": "Star", "value": "faStar" },
+            { "name": "Bolt", "value": "faBolt" }
           ]
         },
         {
-          "component": "boolean",
+          "component": "select",
           "name": "classes_trailingIcon",
           "label": "Trailing Icon",
-          "valueType": "boolean",
-          "value": false
-        },
-        {
-          "component": "aem-content",
-          "name": "link_cta",
-          "label": "URL",
-          "valueType": "string"
+          "valueType": "string",
+          "value": "",
+          "options": [
+            { "name": "Choose an Option", "value": "" },
+            { "name": "Arrow Left", "value": "faArrowLeft" },
+            { "name": "External Link", "value": "faExternalLink" },
+            { "name": "Arrow Right", "value": "faArrowRight" },
+            { "name": "Arrow Down", "value": "faArrowDown" }
+          ]
         },
         {
           "component": "select",
@@ -156,35 +163,6 @@
             {
               "name": "Download",
               "value": "download"
-            }
-          ]
-        },
-        {
-          "component": "select",
-          "name": "classes_target",
-          "label": "Target",
-          "valueType": "string",
-          "value": "",
-          "options": [
-            {
-              "name": "Auto",
-              "value": ""
-            },
-            {
-              "name": "New Tab (_blank)",
-              "value": "_blank"
-            },
-            {
-              "name": "Same Tab (_self)",
-              "value": "_self"
-            },
-            {
-              "name": "Parent (_parent)",
-              "value": "_parent"
-            },
-            {
-              "name": "Top (_top)",
-              "value": "_top"
             }
           ]
         }

@@ -360,6 +360,12 @@
         "value": "Button"
       },
       {
+        "component": "aem-content",
+        "name": "link_cta",
+        "label": "URL",
+        "valueType": "string"
+      },
+      {
         "component": "boolean",
         "name": "classes_enabled",
         "label": "Enabled",
@@ -424,23 +430,23 @@
         "value": "md",
         "options": [
           {
-            "name": "xxs",
+            "name": "Extra Extra Small",
             "value": "xxs"
           },
           {
-            "name": "xs",
+            "name": "Extra Small",
             "value": "xs"
           },
           {
-            "name": "sm",
+            "name": "Small",
             "value": "sm"
           },
           {
-            "name": "md",
+            "name": "Medium",
             "value": "md"
           },
           {
-            "name": "lg",
+            "name": "Large",
             "value": "lg"
           }
         ]
@@ -450,26 +456,30 @@
         "name": "classes_mobileSizeOverride",
         "label": "Mobile Size Override",
         "valueType": "string",
-        "value": "md",
+        "value": "",
         "options": [
           {
-            "name": "xxs",
+            "name": "Choose an Option",
+            "value": ""
+          },
+          {
+            "name": "Extra Extra Small",
             "value": "xxs"
           },
           {
-            "name": "xs",
+            "name": "Extra Small",
             "value": "xs"
           },
           {
-            "name": "sm",
+            "name": "Small",
             "value": "sm"
           },
           {
-            "name": "md",
+            "name": "Medium",
             "value": "md"
           },
           {
-            "name": "lg",
+            "name": "Large",
             "value": "lg"
           }
         ]
@@ -482,67 +492,83 @@
         "value": "",
         "options": [
           {
-            "name": "Choose an icon",
+            "name": "Choose an Option",
             "value": ""
           },
           {
-            "name": "faArrowRight",
+            "name": "Arrow Right",
             "value": "faArrowRight"
           },
           {
-            "name": "faArrowLeft",
+            "name": "Arrow Left",
             "value": "faArrowLeft"
           },
           {
-            "name": "faChevronRight",
+            "name": "Chevron Right",
             "value": "faChevronRight"
           },
           {
-            "name": "faChevronLeft",
+            "name": "Chevron Left",
             "value": "faChevronLeft"
           },
           {
-            "name": "faPlus",
+            "name": "Plus",
             "value": "faPlus"
           },
           {
-            "name": "faDownload",
+            "name": "Download",
             "value": "faDownload"
           },
           {
-            "name": "faHeart",
+            "name": "Heart",
             "value": "faHeart"
           },
           {
-            "name": "faUser",
+            "name": "User",
             "value": "faUser"
           },
           {
-            "name": "faLightbulb",
+            "name": "Lightbulb",
             "value": "faLightbulb"
           },
           {
-            "name": "faStar",
+            "name": "Star",
             "value": "faStar"
           },
           {
-            "name": "faBolt",
+            "name": "Bolt",
             "value": "faBolt"
           }
         ]
       },
       {
-        "component": "boolean",
+        "component": "select",
         "name": "classes_trailingIcon",
         "label": "Trailing Icon",
-        "valueType": "boolean",
-        "value": false
-      },
-      {
-        "component": "aem-content",
-        "name": "link_cta",
-        "label": "URL",
-        "valueType": "string"
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Choose an Option",
+            "value": ""
+          },
+          {
+            "name": "Arrow Left",
+            "value": "faArrowLeft"
+          },
+          {
+            "name": "External Link",
+            "value": "faExternalLink"
+          },
+          {
+            "name": "Arrow Right",
+            "value": "faArrowRight"
+          },
+          {
+            "name": "Arrow Down",
+            "value": "faArrowDown"
+          }
+        ]
       },
       {
         "component": "select",
@@ -566,35 +592,6 @@
           {
             "name": "Download",
             "value": "download"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "classes_target",
-        "label": "Target",
-        "valueType": "string",
-        "value": "",
-        "options": [
-          {
-            "name": "Auto",
-            "value": ""
-          },
-          {
-            "name": "New Tab (_blank)",
-            "value": "_blank"
-          },
-          {
-            "name": "Same Tab (_self)",
-            "value": "_self"
-          },
-          {
-            "name": "Parent (_parent)",
-            "value": "_parent"
-          },
-          {
-            "name": "Top (_top)",
-            "value": "_top"
           }
         ]
       }

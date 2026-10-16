@@ -206,16 +206,15 @@
                   "name": "XE Button",
                   "model": "xe-button",
                   "link_ctaText": "Button",
+                  "link_cta": "#",
                   "classes_enabled": true,
                   "classes_color": "primary",
                   "classes_treatment": "filled",
                   "classes_size": "md",
-                  "classes_mobileSizeOverride": "md",
+                  "classes_mobileSizeOverride": "",
                   "classes_leadingIcon": "",
-                  "classes_trailingIcon": false,
-                  "link_cta": "#",
-                  "classes_type": "auto",
-                  "classes_target": ""
+                  "classes_trailingIcon": "",
+                  "classes_type": "auto"
                 }
               }
             }
