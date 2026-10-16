@@ -1,0 +1,195 @@
+{
+  "definitions": [
+    {
+      "title": "XE Button",
+      "id": "xe-button",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "XE Button",
+              "model": "xe-button",
+              "link_ctaText": "Button",
+              "classes_enabled": true,
+              "classes_color": "primary",
+              "classes_treatment": "filled",
+              "classes_size": "md",
+              "classes_mobileSizeOverride": "md",
+              "classes_leadingIcon": "",
+              "classes_trailingIcon": false,
+              "link_cta": "#",
+              "classes_type": "auto",
+              "classes_target": ""
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "xe-button",
+      "fields": [
+        {
+          "component": "text",
+          "name": "link_ctaText",
+          "label": "Label",
+          "required": true,
+          "valueType": "string",
+          "value": "Button"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_enabled",
+          "label": "Enabled",
+          "valueType": "boolean",
+          "value": true
+        },
+        {
+          "component": "select",
+          "name": "classes_color",
+          "label": "Color",
+          "valueType": "string",
+          "value": "primary",
+          "options": [
+            { "name": "Primary", "value": "primary" },
+            { "name": "Secondary", "value": "secondary" },
+            { "name": "Tertiary", "value": "tertiary" },
+            { "name": "Neutral", "value": "neutral" },
+            { "name": "Accent", "value": "accent" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_treatment",
+          "label": "Treatment",
+          "valueType": "string",
+          "value": "filled",
+          "options": [
+            { "name": "Filled", "value": "filled" },
+            { "name": "Outline", "value": "outline" },
+            { "name": "Text", "value": "text" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_size",
+          "label": "Size",
+          "valueType": "string",
+          "value": "md",
+          "options": [
+            { "name": "xxs", "value": "xxs" },
+            { "name": "xs", "value": "xs" },
+            { "name": "sm", "value": "sm" },
+            { "name": "md", "value": "md" },
+            { "name": "lg", "value": "lg" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_mobileSizeOverride",
+          "label": "Mobile Size Override",
+          "valueType": "string",
+          "value": "md",
+          "options": [
+            { "name": "xxs", "value": "xxs" },
+            { "name": "xs", "value": "xs" },
+            { "name": "sm", "value": "sm" },
+            { "name": "md", "value": "md" },
+            { "name": "lg", "value": "lg" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_leadingIcon",
+          "label": "Leading Icon",
+          "valueType": "string",
+          "value": "",
+          "options": [
+            {"name": "Choose an icon", "value": "" },
+            { "name": "faArrowRight", "value": "faArrowRight" },
+            { "name": "faArrowLeft", "value": "faArrowLeft" },
+            { "name": "faChevronRight", "value": "faChevronRight" },
+            { "name": "faChevronLeft", "value": "faChevronLeft" },
+            { "name": "faPlus", "value": "faPlus" },
+            { "name": "faDownload", "value": "faDownload" },
+            { "name": "faHeart", "value": "faHeart" },
+            { "name": "faUser", "value": "faUser" },
+            { "name": "faLightbulb", "value": "faLightbulb" },
+            { "name": "faStar", "value": "faStar" },
+            { "name": "faBolt", "value": "faBolt" }
+          ]
+        },
+        {
+          "component": "boolean",
+          "name": "classes_trailingIcon",
+          "label": "Trailing Icon",
+          "valueType": "boolean",
+          "value": false
+        },
+        {
+          "component": "aem-content",
+          "name": "link_cta",
+          "label": "URL",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes_type",
+          "label": "Link Type",
+          "valueType": "string",
+          "value": "auto",
+          "options": [
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "External",
+              "value": "external"
+            },
+            {
+              "name": "Internal",
+              "value": "internal"
+            },
+            {
+              "name": "Download",
+              "value": "download"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "classes_target",
+          "label": "Target",
+          "valueType": "string",
+          "value": "",
+          "options": [
+            {
+              "name": "Auto",
+              "value": ""
+            },
+            {
+              "name": "New Tab (_blank)",
+              "value": "_blank"
+            },
+            {
+              "name": "Same Tab (_self)",
+              "value": "_self"
+            },
+            {
+              "name": "Parent (_parent)",
+              "value": "_parent"
+            },
+            {
+              "name": "Top (_top)",
+              "value": "_top"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
